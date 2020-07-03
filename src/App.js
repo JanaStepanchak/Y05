@@ -9,7 +9,7 @@ import {  About } from './components/About';
 import {  Contacts } from './components/Contacts';
 import {  NotFound } from './components/NotFound';
 
-import {  Page1,  Page2,  Page3} from './components/pages';
+//import {  Page1,  Page2,  Page3} from './components/pages';
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
         <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/list" component={List} />
-        <Route path="/list/:itemid" component={Item} /> 
+         <Route path="/list/:id" component={Item} />  
         <Route exact path="/about" component={About} />
         <Route exact path="/contacts" component={Contacts} />
         <Route component={NotFound} />
